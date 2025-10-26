@@ -1,0 +1,15 @@
+const QUEUE_NAMES = {
+  DELIVERY: 'deliveries'
+};
+
+const DELIVERY_STATUS = {
+  PENDING: 'PENDING',
+  SUCCESS: 'SUCCESS',
+  FAILED: 'FAILED',
+  DISABLED: 'DISABLED'
+};
+
+module.exports = {
+  QUEUE_NAMES,
+  DELIVERY_STATUS
+};

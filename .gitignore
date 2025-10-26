@@ -1,0 +1,54 @@
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Env files (root, backend, frontend)
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Build outputs
+dist/
+build/
+coverage/
+.tmp/
+.temp/
+.cache/
+.vite/
+vite-cache/
+
+# Editor/OS
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.swp
+
+# Docker
+docker/*.env
+**/.docker-env
+
+# Local database/redis dumps (if any)
+*.sqlite
+*.db
+dump.rdb
+*.rdb
+*.aof
+
+# Knex migrations artifacts (if generated)
+knexfile.local.js
