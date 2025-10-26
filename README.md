@@ -33,7 +33,10 @@ cd backend
 npm install
 cp .env.example .env
 npm run migrate
-npm start or npm src/server.js        # API on port 8080
+npm start or node src/server.js        # API on port 8080
+```
+In new terminal
+```
 npm run worker    # Queue consumer
 ```
 
@@ -107,5 +110,6 @@ curl -X POST http://localhost:8080/api/events \
 - Admin endpoints require the admin API key.
 - Event ingestion requires the internal API key.
 - Redis-backed metrics allow API and worker to share counters.
+
 
 
